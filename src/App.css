@@ -1,0 +1,47 @@
+:root {
+  --black: #282828;
+  --white: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.App {
+  font-family: brandon-grotesque, sans-serif;
+
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+  
+}
+
+a {
+  text-decoration: none;
+  color:var(--black);
+}
+a:hover{
+  
+  color:red;
+}
+
+.promo {
+  display: flex;
+  justify-content: center;
+  background: var(--black);
+  font-style: normal;
+  font-weight: 390;
+  font-size: 20px;
+  line-height: 120%;
+  color: var(--white);
+}
