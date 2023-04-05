@@ -1,6 +1,9 @@
 :root {
-  --black: #282828;
-  --white: #ffffff;
+  --main1: #282828;
+  --main2: #ffffff;
+  --main3: #d2461c;
+  --main4: #afafaf;
+  --main5: #ffcdbe;
 }
 
 *,
@@ -8,40 +11,122 @@
 *::after {
   box-sizing: border-box;
   margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: oblique;
+}
+
+@font-face {
+  font-family: "Amatic Bold";
+  src: url("./assets/fonts/AmaticSC-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Amatic Reg";
+  src: url("./assets/fonts/AmaticSC-Regular.ttf") format("truetype");
+}
+
+/* Desktop */
+.header-1 {
+  font-family: "Amatic Bold";
+  font-style: normal;
+  font-weight: 450;
+  font-size: 66px;
+  line-height: 110%;
+}
+
+.header-2 {
+  font-family: "Amatic Bold";
+  font-style: normal;
+  font-weight: 450;
+  font-size: 59px;
+  line-height: 110%;
+}
+.header-3 {
+  font-family: "Amatic Bold";
+  font-style: normal;
+  font-weight: 450;
+  font-size: 40px;
+  line-height: 120%;
+}
+.header-4 {
+  font-family: "Amatic Bold";
+  font-style: normal;
+  font-weight: 450;
+  font-size: 32px;
+  line-height: 120%;
+}
+.header-5 {
+  font-family: "Amatic Bold";
+  font-style: normal;
+  font-weight: 450;
+  font-size: 28px;
+  line-height: 120%;
+}
+.header-6 {
+  font-family: "Amatic Bold";
+  font-style: normal;
+  font-weight: 450;
+  font-size: 22px;
+  line-height: 120%;
+}
+
+@media screen {
+  
 }
 
 .App {
-  font-family: brandon-grotesque, sans-serif;
-
+  height: 100vh;
 }
 
 .header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 1rem;
 }
 
 .navbar {
   display: flex;
-  
+  justify-content: space-between;
+  padding-top: 2rem;
 }
 
 a {
   text-decoration: none;
-  color:var(--black);
+  color: var(--main1);
+  padding: 2rem;
 }
-a:hover{
-  
-  color:red;
+a:hover {
+  color: var(--main3);
 }
 
 .promo {
   display: flex;
+  align-items: center;
   justify-content: center;
-  background: var(--black);
+  background: var(--main1);
   font-style: normal;
   font-weight: 390;
   font-size: 20px;
   line-height: 120%;
-  color: var(--white);
+  color: var(--main2);
+  height: 3rem;
+}
+
+.line {
+  width: 100%;
+  border: 0.5px solid var(--main1);
+}
+
+.footer {
+  display: flex;
+  background: var(--main2);
+}
+
+#error-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
